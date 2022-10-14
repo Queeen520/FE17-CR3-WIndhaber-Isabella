@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { menuList } from '../menuList';
+import { interfaceMenus } from '../interfaceMenus';
 
 @Component({
   selector: 'app-details',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
+
+  menus: Array<interfaceMenus> = menuList;
 
   constructor() { }
 

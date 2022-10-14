@@ -9,6 +9,8 @@ import { AbousUsComponent } from './abous-us/abous-us.component';
 import { MenuComponent } from './menu/menu.component';
 import { DetailsComponent } from './details/details.component';
 import { HomeComponent } from './home/home.component';
+import { CartComponent } from './cart/cart.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { HomeComponent } from './home/home.component';
     AbousUsComponent,
     MenuComponent,
     DetailsComponent,
-    HomeComponent
+    HomeComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

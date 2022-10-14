@@ -10,14 +10,17 @@
         <div class="card-body">
             <h5 class="card-title">{{menu.name}}</h5>
 
-            <ng-template [ngIf]="menu.description">
-            <p class="card-text">{{menu.description}}</p>
-            </ng-template>
+          
             
-            <p class="card-text">Special Price: € {{menu.price}}</p>
-            <a routerLink="" class="btn btn-success">Order</a>
-          <a routerLink="" class="btn btn-info">Details</a>
+            <p class="card-text">Special Price: €{{menu.price}}</p>
+            <button type="button" class="btn btn-success">Order</button>
+            <button type="button" class="btn btn-info">Details</button>
         </div>
       </div>
     </div>
 </div>
+
+
+<!-- <ng-template [ngIf]="menu.description">
+  <p class="card-text">{{menu.description}}</p>
+</ng-template> -->

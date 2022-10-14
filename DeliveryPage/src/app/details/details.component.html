@@ -1,1 +1,18 @@
-<p>details works!</p>
+
+
+<div *ngFor="let menu of menus">
+
+    <div class="card" style="max-width: 18rem;">
+        <img src="{{menu.img}}" class="card-img-top" alt="Picture">
+    <div class="card-body">
+        <h5 class="card-title">{{menu.name}}</h5>
+
+        <ng-template [ngIf]="menu.description">
+        <p class="card-text">{{menu.description}}</p>
+        </ng-template>
+        
+        <p class="card-text">Special Price: €{{menu.price}}</p>
+        <button type="button" class="btn btn-success">Order</button>
+    </div>
+  </div>
+</div>
