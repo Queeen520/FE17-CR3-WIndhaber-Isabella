@@ -3,7 +3,8 @@
 <div class="container">
     <h2>Our Specials</h2>
 
-    <div class="card-group" *ngFor="let menu of menus">
+    <div class="card-group" 
+    *ngFor="let menu of menus; index as index">
 
         <div class="card" style="max-width: 18rem;">
             <img src="{{menu.img}}" class="card-img-top" alt="Picture">
@@ -13,8 +14,8 @@
           
             
             <p class="card-text">Special Price: €{{menu.price}}</p>
-            <button type="button" class="btn btn-success">Order</button>
-            <button type="button" class="btn btn-info">Details</button>
+            <button type="button" class="btn btn-success"><a>Order</a></button>
+            <button type="button" class="btn btn-info"><a routerLink="menus/{{index}}">Details</a></button>
         </div>
       </div>
     </div>

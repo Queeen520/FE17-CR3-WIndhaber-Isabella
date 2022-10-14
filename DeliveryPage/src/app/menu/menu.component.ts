@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { menuList } from '../menuList';
+import { menus } from '../menus';
 import { interfaceMenus } from '../interfaceMenus';
 
 @Component({
@@ -9,7 +9,7 @@ import { interfaceMenus } from '../interfaceMenus';
 })
 export class MenuComponent implements OnInit {
 
-  menus: Array<interfaceMenus> = menuList;
+  menus: Array<interfaceMenus> = menus;
 
   constructor() {}
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { menuList } from '../menuList';
+import { menuList } from '../menus';
 import { interfaceMenus } from '../interfaceMenus';
-import { CartService } from '../cart.service';
+
 
 @Component({
   selector: 'app-details',
