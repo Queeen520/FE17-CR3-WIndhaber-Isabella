@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { menuList } from '../menuList';
 import { interfaceMenus } from '../interfaceMenus';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-details',
@@ -10,6 +11,7 @@ import { interfaceMenus } from '../interfaceMenus';
 export class DetailsComponent implements OnInit {
 
   menus: Array<interfaceMenus> = menuList;
+
 
   constructor() { }
 
