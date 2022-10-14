@@ -12,7 +12,7 @@ export class CartService {
   constructor() { }
 
   placeOrder(product: interfaceMenus) {
-    this.items.push(product);
+  this.items.push(product);
   }
 
 }

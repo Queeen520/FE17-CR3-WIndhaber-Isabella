@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { menuList } from '../menus';
-import { interfaceMenus } from '../interfaceMenus';
+import { ActivatedRoute, Params } from '@angular/router'; 
 
+import { menus } from '../menus';
+import { interfaceMenus } from '../interfaceMenus';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-details',
@@ -10,12 +12,22 @@ import { interfaceMenus } from '../interfaceMenus';
 })
 export class DetailsComponent implements OnInit {
 
-  menus: Array<interfaceMenus> = menuList;
+  product: interfaceMenus = {} as interfaceMenus;
+  id: number = 0;
 
+  constructor(private route: ActivatedRoute, private cartService: CartService) { }
 
-  constructor() { }
+  placeOrder() {
+    window.alert('Your product has been added to the cart!');
+    this.cartService.placeOrder(this.product);
+  }
 
   ngOnInit(): void {
+    this.route.params.subscribe((params: Params) => {
+      this.id = +params['id'];
+      this.product = menus[this.id];
+    });
+  
   }
 
 }
