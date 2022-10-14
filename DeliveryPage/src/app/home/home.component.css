@@ -1,0 +1,16 @@
+.myheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5cm;
+    margin-top: 1cm;
+    background: url(https://images.rawpixel.com/image_1000/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvay1wLTIwOC1wYWktMDAwMTEuanBn.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.myheader h1, h2 {
+    color: white;
+}
