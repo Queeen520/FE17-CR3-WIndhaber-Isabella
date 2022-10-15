@@ -14,3 +14,19 @@
 .myheader h1, h2 {
     color: white;
 }
+
+#myContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10rem;
+}
+
+.img1 {
+    display: flex;
+    padding: 2%;
+}
+
+.img2 {
+display: flex;
+padding: 2%;
+}

@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router'; 
 
 import { menus } from '../menus';
-import { interfaceMenus } from '../interfaceMenus';
-import { CartService } from '../cart.service';
+import { imenus } from '../imenus';
 
 @Component({
   selector: 'app-details',
@@ -12,15 +11,11 @@ import { CartService } from '../cart.service';
 })
 export class DetailsComponent implements OnInit {
 
-  product: interfaceMenus = {} as interfaceMenus;
+  product: imenus = {} as imenus;
   id: number = 0;
 
-  constructor(private route: ActivatedRoute, private cartService: CartService) { }
+  constructor(private route: ActivatedRoute) { }
 
-  placeOrder() {
-    window.alert('Your product has been added to the cart!');
-    this.cartService.placeOrder(this.product);
-  }
 
   ngOnInit(): void {
     this.route.params.subscribe((params: Params) => {

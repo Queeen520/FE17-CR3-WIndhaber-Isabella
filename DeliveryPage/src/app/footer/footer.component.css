@@ -11,4 +11,5 @@ backdrop-filter: blur( 7px );
 
 p {
     color: white;
+    font-size: larger;
 }

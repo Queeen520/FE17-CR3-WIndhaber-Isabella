@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { menus } from '../menus';
-import { interfaceMenus } from '../interfaceMenus';
-import { CartService } from '../cart.service';
+import { imenus } from '../imenus';
 
 
 @Component({
@@ -11,15 +10,13 @@ import { CartService } from '../cart.service';
 })
 export class MenuComponent implements OnInit {
 
-  menus: interfaceMenus[] = menus;
-  product: interfaceMenus = {} as interfaceMenus;
+  menus: imenus[] = menus;
 
-  constructor(private cartService: CartService) {}
+  constructor() {
+    console.table(menus);
 
-  placeOrder() {
-    window.alert('Your product has been added to the cart!');
-    this.cartService.placeOrder(this.product);
   }
+
 
   ngOnInit(): void {
   }

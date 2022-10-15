@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { interfaceMenus } from './interfaceMenus';
+import { imenus } from './imenus';
 
 @Injectable({
   providedIn: 'root'
@@ -7,11 +7,11 @@ import { interfaceMenus } from './interfaceMenus';
 
 export class CartService {
   
-  items: interfaceMenus[] = [];
+  items: imenus[] = [];
 
   constructor() { }
 
-  placeOrder(product: interfaceMenus) {
+  placeOrder(product: imenus) {
   this.items.push(product);
   }
 

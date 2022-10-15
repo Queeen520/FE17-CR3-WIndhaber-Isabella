@@ -3,20 +3,22 @@
 <div class="container">
     <h2>Our Specials</h2>
 
-    <div class="card-group" 
-    *ngFor="let menu of menus; index as id">
+    <div class="row row-cols-3">
 
-        <div class="card" style="max-width: 18rem;">
+        <div class="card" style="width: 25rem;" 
+        *ngFor="let menu of menus; index as id">
             <img src="{{menu.img}}" class="card-img-top" alt="Picture">
         <div class="card-body">
             <h5 class="card-title">{{menu.name}}</h5>
             <p class="card-text">Special Price: €{{menu.price}}</p>
-            <button (click)="placeOrder()" type="button" class="btn btn-success"><a>Order</a></button>
+            <button type="button" class="btn btn-success">Order</button>
             <button type="button" class="btn btn-info"><a routerLink="menus/{{id}}">Details</a></button>
         </div>
       </div>
     </div>
 </div>
+
+
 
 
 <!-- <ng-template [ngIf]="menu.description">

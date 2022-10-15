@@ -1,5 +1,5 @@
 
-export interface interfaceMenus {
+export interface imenus {
     name: string;
     img: string;
     price: number;
