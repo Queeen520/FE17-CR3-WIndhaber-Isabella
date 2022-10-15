@@ -29,4 +29,9 @@ export class DetailsComponent implements OnInit {
   
   }
 
+  placeOrder() {
+    alert("Your product has been added to the cart!");
+    this.cs.placeOrder(this.product);
+  }
+
 }

@@ -5,6 +5,6 @@
     <h5 class="card-title">{{product.name}}</h5>
     <p class="card-text">{{product.description}}</p>
     <p class="card-text">Special Price: €{{product.price}}</p>
-    <button type="button" class="btn btn-success">Order</button>
+    <button (click)="placeOrder()" type="button" class="btn btn-success">Order</button>
   </div>
 </div>
