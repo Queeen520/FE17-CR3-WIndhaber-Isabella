@@ -19,11 +19,11 @@
 <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
 
     <label for="name"> Name:
-    <input type="text" formControleName="name">
+    <input type="text" formControleName="name" required>
     </label>
     <br>
     <label for="adress"> Adress:
-    <input type="text" formControlName="adress">
+    <input type="text" formControlName="adress" required>
     </label>
     <br>
     <input type="submit" class="btn btn-primary" value="Send">
