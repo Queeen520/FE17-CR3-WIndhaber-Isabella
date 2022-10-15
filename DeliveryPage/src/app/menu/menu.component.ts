@@ -11,7 +11,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 })
 export class MenuComponent implements OnInit {
 
-  menus: imenus[] = menus;
+  menus: Array<imenus> = menus;
 
   product: imenus = {} as imenus;
   id: number = 0;
