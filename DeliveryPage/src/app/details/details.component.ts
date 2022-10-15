@@ -3,6 +3,8 @@ import { ActivatedRoute, Params } from '@angular/router';
 
 import { menus } from '../menus';
 import { imenus } from '../imenus';
+import { CartService } from '../cart.service';
+
 
 @Component({
   selector: 'app-details',
@@ -11,10 +13,12 @@ import { imenus } from '../imenus';
 })
 export class DetailsComponent implements OnInit {
 
+  menus: Array<imenus> = menus;
+
   product: imenus = {} as imenus;
   id: number = 0;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private cs: CartService) { }
 
 
   ngOnInit(): void {
