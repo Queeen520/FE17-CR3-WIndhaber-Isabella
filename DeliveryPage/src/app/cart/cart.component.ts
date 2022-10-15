@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { CartService } from '../cart.service';
+import { imenus } from '../imenus';
+
 
 @Component({
   selector: 'app-cart',
@@ -16,15 +19,24 @@ export class CartComponent implements OnInit {
   
   });
 
-  constructor() { }
+  items: Array<imenus> = [];
 
-  ngOnInit(): void {
+  constructor(private cs: CartService) { }
+
+  clearCart() {
+    window.alert('Your cart has been cleared');
+    this.items = this.cs.clearCart();
+  }
+  
+   onSubmit() {
+    console.warn('Your order has been submitted', this.formGroup.value);
+    this.items = this.cs.clearCart();
+    this.cs.clearCart();
   }
 
-  onSubmit(){
-    if(this.formGroup.valid) {
-    var a = this.formGroup.value;
-    console.log(a)
-     }
-    }
+  ngOnInit(): void {
+    this.items = this.cs.getItems();
+    //console.log(this.items);
+  }
+
 }

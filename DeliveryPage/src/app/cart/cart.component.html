@@ -1,6 +1,13 @@
 
 
-<div class="container">
+<div class="container" *ngFor="let item of items">
+
+    <div class="card" style="width: 25rem;">
+    <div class="card-body">
+        <h5 class="card-title">{{item.name}}</h5>
+        <p>Price: €{{item.name}}</p>
+    </div>
+  </div>
 
 </div>
 
@@ -14,12 +21,12 @@
     <label for="name"> Name:
     <input type="text" formControleName="name">
     </label>
-
+    <br>
     <label for="adress"> Adress:
-    <input type="text" formControlAdress="adress">
+    <input type="text" formControlName="adress">
     </label>
-
-    <input type="submit" class="btn btn-primary" value="Submit">
+    <br>
+    <input type="submit" class="btn btn-primary" value="Send">
 
 </form>
 
