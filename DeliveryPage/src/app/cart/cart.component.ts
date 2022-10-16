@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { CartService } from '../cart.service';
 import { imenus } from '../imenus';
+import { menus } from '../menus';
+
 
 
 @Component({
@@ -21,7 +23,12 @@ export class CartComponent implements OnInit {
 
   items: Array<imenus> = [];
 
-  constructor(private cs: CartService) { }
+
+
+  constructor(private cs: CartService) { 
+
+    
+  }
 
   clearCart() {
     window.alert('Your cart has been cleared');
@@ -36,7 +43,7 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
     this.items = this.cs.getItems();
-    //console.log(this.items);
+    console.log(this.items);
   }
 
 }
