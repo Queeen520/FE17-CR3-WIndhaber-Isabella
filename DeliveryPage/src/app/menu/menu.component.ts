@@ -17,7 +17,7 @@ export class MenuComponent implements OnInit {
   id: number = 0;
 
   constructor(private route: ActivatedRoute, private cs: CartService) {
-   // console.table(menus);
+   //console.table(menus);
   }
 
   ngOnInit(): void {
@@ -27,8 +27,8 @@ export class MenuComponent implements OnInit {
     });
 
   }
-
-  placeOrder() {
+  
+  placeOrder(menu: imenus) {
     alert("Your product has been added to the cart!");
     this.cs.placeOrder(this.product);
   }

@@ -13,12 +13,13 @@
             <p class="card-text">Special Price: €{{menu.price}}</p>
             <ng-template [ngIf]="menu.availability" [ngIfElse]="next">
             <p class="card-text"></p>
+            <button (click)="placeOrder(menu)" type="button" class="btn btn-success">Order</button>
+            <button type="button" class="btn btn-info"><a routerLink="/menus/{{id}}">Details</a></button>
             </ng-template>
             <ng-template #next>
             <p class="card-text text-danger">Not available!</p>
+            <button type="button" class="btn btn-info"><a routerLink="/menus/{{id}}">Details</a></button>
             </ng-template>
-            <button (click)="placeOrder()" type="button" class="btn btn-success">Order</button>
-            <button type="button" class="btn btn-info"><a routerLink="menus/{{id}}">Details</a></button>
         </div>
       </div>
     </div>
