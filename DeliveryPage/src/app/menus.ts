@@ -12,14 +12,14 @@ export const menus = [
       img: 'https://www.gutekueche.at/storage/media/recipe/21219/conv/spinat-lasagne-default.jpg',
       price: 8.95,
       availability: true,
-      description: 'Text Text Text Text Text Text Text Text Text Text Text Text'
+      description: 'This recipe was created by Francesco Rosso himself. It was one of the first recipes on the menu!'
     },
     {
       name: 'Penne All Arrabiata',
       img: 'https://images.eatsmarter.de/sites/default/files/styles/576x432/public/penne-all-arrabbiata-5339-3.jpg',
       price: 799,
       availability: true,
-      description: 'Text Text Text Text Text Text Text Text Text Text Text Text'
+      description: 'In Italy, every child knows Penne All Arrabiata and this creation tastes almost like the one from mama!'
     },
     {
       name: 'Filetto Di Salmone',
@@ -33,7 +33,7 @@ export const menus = [
       img: 'https://ricetta.it/Uploads/Imgs/risotto-alla-pescatora_.jpg',
       price: 7.99,
       availability: true,
-      description: 'Text Text Text Text Text Text Text Text Text Text Text Text'
+      description: 'Rosso Junior created this recipe. He served it to his parents the night he announced he wants to be a chef cook and nothing else'
     },
     {
 
