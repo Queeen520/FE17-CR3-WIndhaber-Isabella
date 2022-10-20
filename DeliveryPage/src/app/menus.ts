@@ -26,7 +26,7 @@ export const menus = [
       img: 'https://www.bofrost.it/writable/products/images-v2/15493.jpg',
       price: 9.95,
       availability: true,
-      description: 'Text Text Text Text Text Text Text Text Text Text Text Text'
+      description: 'Everyone how likes fish should try this menu! The salmone we use comes directly from a fishing cutter.'
     },
     {
       name: 'Risotto Alla Pescatora',
@@ -41,6 +41,6 @@ export const menus = [
       img: 'https://www.koch-mit.de/app/uploads/2020/01/beerenpannacotta.jpg',
       price: 6.80,
       availability: false,
-      description: 'Text Text Text Text Text Text Text Text Text Text Text Text'
+      description: 'This is the newest creation from our master cook - everyone loves it'
     }
    ];
