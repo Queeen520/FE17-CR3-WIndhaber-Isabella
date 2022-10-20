@@ -4,7 +4,7 @@ export const menus = [
       img: 'https://cdn.shopify.com/s/files/1/0410/4598/3397/articles/Margherita-9920.jpg',
       price: 16.95,
       availability: true,
-      description: 'Text Text Text'
+      description: 'Mary Rosso got the recipe for this pizza from her grandmother and it was one of the first dishes she made.'
     },
   
     {

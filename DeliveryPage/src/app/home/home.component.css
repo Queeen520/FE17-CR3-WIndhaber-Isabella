@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
 .myheader {
     display: flex;
     flex-direction: column;
@@ -9,11 +13,15 @@
     background: url(https://images.rawpixel.com/image_1000/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvay1wLTIwOC1wYWktMDAwMTEuanBn.jpg);
     background-position: center;
     background-size: cover;
+    border-radius: 2rem;
 }
 
 .myheader h1, h2 {
     color: white;
+    font-family: Dancing Script;
+    font-size: 4rem;
 }
+
 
 #myContainer {
     display: flex;
@@ -29,4 +37,9 @@
 .img2 {
 display: flex;
 padding: 2%;
+}
+
+p {
+    font-family: Comic Neue;
+    font-size: 20px;
 }
