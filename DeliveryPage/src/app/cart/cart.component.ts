@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { CartService } from '../cart.service';
+import { menus } from '../menus';
 import { imenus } from '../imenus';
-
+import { ActivatedRoute, Params } from '@angular/router'; 
 
 
 @Component({
@@ -20,11 +21,13 @@ export class CartComponent implements OnInit {
   
   });
 
+
   items: Array<imenus> = [];
 
+  product: imenus = {} as imenus;
+  id: number = 0;
 
-
-  constructor(private cs: CartService) {
+  constructor(private route: ActivatedRoute, private cs: CartService) {
     
   }
 
@@ -41,6 +44,11 @@ export class CartComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.route.params.subscribe((params: Params) => {
+      this.id = +params['id'];
+      this.product = menus[this.id];
+    });
+    
     this.items = this.cs.getItems();
     console.log(this.items);
   }
