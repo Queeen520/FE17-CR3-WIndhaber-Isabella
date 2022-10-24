@@ -33,7 +33,7 @@ export class CartComponent implements OnInit {
 
 
   clearCart() {
-    window.alert('Your cart has been cleared');
+    alert('Your cart has been cleared');
     this.items = this.cs.clearCart();
   }
   

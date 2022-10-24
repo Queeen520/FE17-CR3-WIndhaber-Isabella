@@ -17,7 +17,7 @@ export const menus = [
     {
       name: 'Penne All Arrabiata',
       img: 'https://images.eatsmarter.de/sites/default/files/styles/576x432/public/penne-all-arrabbiata-5339-3.jpg',
-      price: 799,
+      price: 7.99,
       availability: true,
       description: 'In Italy, every child knows Penne All Arrabiata and this creation tastes almost like the one from mama!'
     },
@@ -31,7 +31,7 @@ export const menus = [
     {
       name: 'Risotto Alla Pescatora',
       img: 'https://ricetta.it/Uploads/Imgs/risotto-alla-pescatora_.jpg',
-      price: 7.99,
+      price: 12.99,
       availability: true,
       description: 'Rosso Junior created this recipe. He served it to his parents the night he announced he wants to be a chef cook and nothing else'
     },
@@ -39,7 +39,7 @@ export const menus = [
 
       name: 'Panna Cotta With Berries',
       img: 'https://www.koch-mit.de/app/uploads/2020/01/beerenpannacotta.jpg',
-      price: 6.80,
+      price: 6.85,
       availability: false,
       description: 'This is the newest creation from our master cook - everyone loves it'
     }

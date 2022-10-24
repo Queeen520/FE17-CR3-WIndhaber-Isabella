@@ -1,23 +1,48 @@
 
 
-<div class="container" *ngFor="let item of items">
+<div class="container">
+    <div class="card-group">
 
-  <div class="card" style="max-width: 18rem;">
-    <img src="{{item.img}}" class="card-img-top" alt="Picture">
-  <div class="card-body">
-      <h5 class="card-title">{{item.name}}</h5>
-      <p class="card-text">{{item.description}}</p>
-      <p class="card-text">Special Price: €{{product.price}}</p>
-    </div>
+      <div class="card" style="max-width: 18rem;" 
+        *ngFor="let item of items">
+        <img src="{{item.img}}" class="card-img-top" alt="Picture">
+        <div class="card-body">
+        <h5 class="card-title"> {{item.name}} </h5>
+        <p class="card-title"> € {{item.price}} </p>
+        </div>
+      </div>
+
+<!-- Total Price -->
+<div class="container" id="total">
+  <div>
+    <p>Total:</p>
+  </div>
+  <div>
+    <p>
+      
+    </p>
+  </div>
   </div>
 
+<!-- How many items -->
+<div class="container" id="items">
+  <div>
+    <p>Items in Cart:</p>
+  </div>
+  <div>
+    <p>
+      {{items[id]}}
+    </p>
+  </div>
+  </div>
+
+    </div>
 </div>
 
 
 <div class="container">
 
 <h2>Order Form</h2>
-
 
 <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
 
