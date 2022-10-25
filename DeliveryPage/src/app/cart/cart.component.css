@@ -1,0 +1,10 @@
+#total, #items {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+}
+
+.output {
+    padding-left: 4rem;
+}
+

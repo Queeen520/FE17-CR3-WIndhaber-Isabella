@@ -21,16 +21,15 @@ export class CartComponent implements OnInit {
   
   });
 
-
   items: Array<imenus> = [];
 
-  product: imenus = {} as imenus;
-  id: number = 0;
+  total: number = 0;
+  count: number = 0;
+
 
   constructor(private route: ActivatedRoute, private cs: CartService) {
     
   }
-
 
   clearCart() {
     alert('Your cart has been cleared');
@@ -44,13 +43,11 @@ export class CartComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.route.params.subscribe((params: Params) => {
-      this.id = +params['id'];
-      this.product = menus[this.id];
-    });
-    
+
+    this.total = this.cs.total();
     this.items = this.cs.getItems();
-    console.log(this.items);
+    this.count = this.cs.count();
+    
   }
 
 }

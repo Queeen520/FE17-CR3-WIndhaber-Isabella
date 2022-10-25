@@ -12,7 +12,6 @@ import { ActivatedRoute, Params } from '@angular/router';
 export class MenuComponent implements OnInit {
 
   menus: Array<imenus> = menus;
-
   product: imenus = {} as imenus;
   id: number = 0;
 
@@ -28,8 +27,8 @@ export class MenuComponent implements OnInit {
 
   }
   
-  placeOrder(menu: imenus) {
+  placeOrder(product: any) {
     alert("Your product has been added to the cart!");
-    this.cs.placeOrder(this.product);
+    this.cs.placeOrder(product);
   }
 }

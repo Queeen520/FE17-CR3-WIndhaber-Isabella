@@ -14,7 +14,6 @@ import { CartService } from '../cart.service';
 export class DetailsComponent implements OnInit {
 
   menus: Array<imenus> = menus;
-
   product: imenus = {} as imenus;
   id: number = 0;
 

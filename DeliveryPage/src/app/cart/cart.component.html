@@ -15,12 +15,10 @@
 <!-- Total Price -->
 <div class="container" id="total">
   <div>
-    <p>Total:</p>
+    <p> Total: </p>
   </div>
-  <div>
-    <p>
-      
-    </p>
+  <div class="output">
+    <p *ngIf="total > 0"> € {{ total }} </p>
   </div>
   </div>
 
@@ -29,10 +27,8 @@
   <div>
     <p>Items in Cart:</p>
   </div>
-  <div>
-    <p>
-      {{items[id]}}
-    </p>
+  <div class="output">
+    <p *ngIf="count > 0"> {{ count }} </p>
   </div>
   </div>
 
